@@ -32,7 +32,8 @@
     "package-dmg": "electron-installer-dmg ./out/bird2-darwin-arm64/ bird2 --out=./out --overwrite",
     "make": "electron-forge make --platform=linux",
     "publish": "electron-forge publish",
-    "watch": "mix watch"
+    "watch": "mix watch",
+    "mix": "mix"
   },
   "eslintConfig": {
     "extends": [
