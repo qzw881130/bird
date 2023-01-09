@@ -2,12 +2,21 @@
   "name": "bird2",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
+  "homepage": ".",
   "dependencies": {
+    "@electron-forge/publisher-github": "^6.0.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.3",
+    "electron-squirrel-startup": "^1.0.0",
+    "laravel-mix": "^6.0.49",
+    "macos-alias": "^0.2.11",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -15,7 +24,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-dev": "electron . dev",
+    "electron": "electron .",
+    "starte": "electron-forge start",
+    "package": "electron-forge package",
+    "package-dmg": "electron-installer-dmg ./out/bird2-darwin-arm64/ bird2 --out=./out --overwrite",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "watch": "mix watch"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +51,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-dmg": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "^22.0.0",
+    "sass": "^1.57.1"
   }
 }
