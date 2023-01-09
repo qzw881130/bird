@@ -2,7 +2,7 @@ module.exports = {
   packagerConfig: {
     icon: 'public/bird',
     ignore: ['node_modules', '.gitignore', 'src'],
-    // platform: ['darwin'],
+    platform: ['linux'],
     overwrite: true,
     // arch: ['x64']
   },
@@ -11,7 +11,7 @@ module.exports = {
   publishers: [
     {
       name: '@electron-forge/publisher-github',
-      "platforms": ["darwin"],
+      "platforms": ["linux"],
       config: {
         authToken: "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",
         tagPrefix: '',
@@ -39,7 +39,7 @@ module.exports = {
     // },
     {
       name: '@electron-forge/maker-zip',
-      platforms: ['darwin'],
+      platforms: ['linux'],
     },
     // {
     //   name: '@electron-forge/maker-deb',
