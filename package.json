@@ -60,7 +60,6 @@
     "@electron-forge/maker-squirrel": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.4",
     "electron": "^22.0.0",
-    "sass": "^1.57.1",
-    "macos-alias": "^0.2.11"
+    "sass": "^1.57.1"
   }
 }
