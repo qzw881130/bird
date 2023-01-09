@@ -15,17 +15,17 @@ jobs:
   #     run: npm run make
 
   build_on_linux:
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkout@v2
-  - uses: actions/setup-node@master
-    with:
-      node-version: 16
-  - name: install dependencies
-    run: npm install
-  - name: build-react
-    run: npm run build
-  - name: mix
-    run: npm run mix
-  - name: build
-    run: npm run make
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@master
+      with:
+        node-version: 16
+    - name: install dependencies
+      run: npm install
+    - name: build-react
+      run: npm run build
+    - name: mix
+      run: npm run mix
+    - name: build
+      run: npm run make
