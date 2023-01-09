@@ -11,16 +11,12 @@ module.exports = {
   publishers: [
     {
       name: '@electron-forge/publisher-github',
-      "platforms": ["linux"],
+      platforms: ["linux"],
       config: {
-        authToken: "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",
-        tagPrefix: '',
         repository: {
           owner: 'qzw881130',
           name: 'bird1',
-          // branch:'master'
         },
-        draft: true,
         // prerelease: true
       }
     }
