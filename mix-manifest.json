@@ -1,7 +1,11 @@
 {
     "/src/css/app.css": "/src/css/app.css",
-    "/public/asset/facai.mp3": "/public/asset/facai.mp3",
-    "/public/asset/facai.mp4": "/public/asset/facai.mp4",
-    "/public/asset/facai.ogg": "/public/asset/facai.ogg",
-    "/public/asset/facai.wav": "/public/asset/facai.wav"
+    "/build/asset/background.jpg": "/build/asset/background.jpg",
+    "/build/asset/bird.icns": "/build/asset/bird.icns",
+    "/build/asset/bird.ico": "/build/asset/bird.ico",
+    "/build/asset/bird.png": "/build/asset/bird.png",
+    "/build/asset/facai.mp3": "/build/asset/facai.mp3",
+    "/build/asset/facai.mp4": "/build/asset/facai.mp4",
+    "/build/asset/facai.ogg": "/build/asset/facai.ogg",
+    "/build/asset/facai.wav": "/build/asset/facai.wav"
 }

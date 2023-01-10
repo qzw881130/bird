@@ -1,13 +1,13 @@
 module.exports = {
   packagerConfig: {
-    icon: 'public/bird',
+    icon: 'build/bird',
     ignore: ['node_modules', '.gitignore', 'src'],
     // platform: ['darwin'],
     overwrite: true,
     // arch: ['x64']
   },
   rebuildConfig: {},
-  buildIdentifier: 'my-build',
+  buildIdentifier: 'v0.1.0',
   publishers: [
     {
       name: '@electron-forge/publisher-github',
@@ -29,7 +29,7 @@ module.exports = {
     {
       name: '@electron-forge/maker-dmg',
       config: {
-        background: './public/ray-hennessy-6-JIDCnZG2E-unsplash.jpg',
+        background: './build/asset/background.jpg',
         format: 'ULFO',
       }
     },
