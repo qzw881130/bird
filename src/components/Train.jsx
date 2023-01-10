@@ -9,7 +9,7 @@ function Train() {
   const [playState, setPlayState] = useState(false);
   const [startTs, setStartTs] = useState(0);
   
-  const getTimeStamp = () => parseInt((new Date).getTime()/1000);
+  const getTimeStamp = () => parseInt((new Date()).getTime()/1000);
   const [currTs, setCurrTs] = useState(getTimeStamp());
 
   // const [inter, setInter] = useState(null);
@@ -67,6 +67,7 @@ function Train() {
     return () => {
       
     }
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [playState]);
   
   // console.log('#### startTs', startTs, 'currTs', currTs);
