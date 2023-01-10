@@ -26,6 +26,7 @@ function Train() {
       // console.log('clearn inter');
       clearInterval(inter);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [(new Date())])
   
   const calcDuration = () => {
