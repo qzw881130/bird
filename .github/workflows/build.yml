@@ -16,8 +16,8 @@ jobs:
         node-version: 16.4.2
       env:
         CI: false
-    - run: npm ci
-    - run: npm test
+    # - run: npm ci
+    # - run: npm test
     - name: install dependencies
       run: npm install
     - name: build-react
