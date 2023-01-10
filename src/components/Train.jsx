@@ -27,7 +27,7 @@ function Train() {
       // console.log('clearn inter');
       clearInterval(inter);
     }
-  }, [new Date()])
+  }, [(new Date())])
   
   const calcDuration = () => {
     // console.log('#### startTs', startTs, 'currTs', currTs);
