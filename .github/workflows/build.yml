@@ -14,13 +14,13 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16.4.2
+      env:
+        CI: false
     - run: npm ci
     - run: npm test
     - name: install dependencies
       run: npm install
     - name: build-react
-        env:
-          CI: false
       run: export CI=false && npm run build
     - name: mix
       run: npm run mix
