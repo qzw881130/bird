@@ -45,10 +45,12 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
+    - run: npm ci
+    - run: npm test
+    - run: unset CI
     - name: install dependencies
       run: npm install
     - name: build-react
-      run: unset CI
       run: npm run build
     - name: mix
       run: npm run mix
