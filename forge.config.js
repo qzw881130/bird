@@ -14,7 +14,7 @@ module.exports = {
       config: {
         repository: {
           owner: 'qzw881130',
-          name: 'birtd1',
+          name: 'bird',
         },
         draft: false,
         prerelease: true
