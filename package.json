@@ -5,7 +5,11 @@
   "productName": "bird2",
   "description": "My bird train saying tool",
   "main": "main.js",
-  "homepage": ".",
+  "author": {
+    "name": "zhiwei Qian",
+    "email": "380659419@qq.com"
+  },
+  "license": "MIT",
   "dependencies": {
     "@electron-forge/publisher-github": "^6.0.4",
     "@testing-library/jest-dom": "^5.16.5",

@@ -40,11 +40,7 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-deb',
-      config: {
-        options: {
-          description: 'linux deb package'
-        }
-      },
+      config: {},
     },
     {
       name: '@electron-forge/maker-rpm',
