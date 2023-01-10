@@ -2,7 +2,7 @@ module.exports = {
   packagerConfig: {
     icon: 'public/bird',
     ignore: ['node_modules', '.gitignore', 'src'],
-    platform: ['darwin'],
+    // platform: ['darwin'],
     overwrite: true,
     // arch: ['x64']
   },
@@ -11,14 +11,13 @@ module.exports = {
   publishers: [
     {
       name: '@electron-forge/publisher-github',
-      platforms: ["darwin"],
       config: {
         repository: {
           owner: 'qzw881130',
           name: 'birtd1',
           draft: false
         },
-        // prerelease: true
+        prerelease: true
       }
     }
   ],
@@ -27,16 +26,16 @@ module.exports = {
       name: '@electron-forge/maker-squirrel',
       config: {},
     },
-    // {
-    //   name: '@electron-forge/maker-dmg',
-    //   config: {
-    //     background: './public/ray-hennessy-6-JIDCnZG2E-unsplash.jpg',
-    //     format: 'ULFO',
-    //   }
-    // },
+    {
+      name: '@electron-forge/maker-dmg',
+      config: {
+        background: './public/ray-hennessy-6-JIDCnZG2E-unsplash.jpg',
+        format: 'ULFO',
+      }
+    },
     {
       name: '@electron-forge/maker-zip',
-      platforms: ['darwin'],
+      // platforms: ['darwin'],
     },
     {
       name: '@electron-forge/maker-deb',
