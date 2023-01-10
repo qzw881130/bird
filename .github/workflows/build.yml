@@ -9,20 +9,20 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
 
-      steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.4.2
-      - run: npm ci
-      - run: npm test
-      - name: install dependencies
-        run: npm install
-      - name: build-react
-          env:
-            CI: false
-        run: export CI=false && npm run build
-      - name: mix
-        run: npm run mix
-      - name: build
-        run: npm run make
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16.4.2
+    - run: npm ci
+    - run: npm test
+    - name: install dependencies
+      run: npm install
+    - name: build-react
+        env:
+          CI: false
+      run: export CI=false && npm run build
+    - name: mix
+      run: npm run mix
+    - name: build
+      run: npm run make
