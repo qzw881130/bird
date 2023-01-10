@@ -1,7 +1,7 @@
 module.exports = {
   packagerConfig: {
     icon: 'build/bird',
-    ignore: ['node_modules', '.gitignore', 'src'],
+    ignore: ['node_modules', '.gitignore', 'src', 'public'],
     // platform: ['darwin'],
     overwrite: true,
     // arch: ['x64']

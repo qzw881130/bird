@@ -21,7 +21,7 @@ function createWindow () {
   if(mode === 'dev') { 
     mainWindow.loadURL("http://localhost:3000/")
   } else { 
-    console.log('pathname:', path.join(__dirname, './build/index.html'));
+    // console.log('pathname:', path.join(__dirname, './build/index.html'));
 
     mainWindow.loadURL(url.format({
       pathname:path.join(__dirname, './build/index.html'), 
@@ -32,7 +32,7 @@ function createWindow () {
   // and load the index.html of the app.
   // mainWindow.loadFile('index.html')
 // console.log(process.argv);
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 }
 
 app.whenReady().then(() => {
