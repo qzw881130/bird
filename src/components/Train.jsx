@@ -1,3 +1,4 @@
+import { clear } from '@testing-library/user-event/dist/clear';
 import React, { useState, useEffect } from 'react';
 import {Card, Button, Form} from "react-bootstrap";
 
