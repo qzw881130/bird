@@ -2,42 +2,41 @@ name: Build
 on: [push, pull_request]
 
 jobs:
-  # build_on_mac:
-  #   runs-on: macos-latest
-  #   steps:
-  #   - uses: actions/checkout@v3
-  #   - uses: actions/setup-node@v3
-  #     with:
-  #       node-version: 16.4.2
-  #   - run: npm ci
-  #   - run: npm test
-  #   - name: install dependencies
-  #     run: npm install
-  #   - name: build-react
-  #     run: npm run build
-  #   - name: mix
-  #     run: npm run mix
-  #   - name: build
-  #     run: npm run make
+  build_on_mac:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16.4.2
+    - run: npm ci
+    - run: npm test
+    - name: install dependencies
+      run: npm install
+    - name: build-react
+      run: npm run build
+    - name: mix
+      run: npm run mix
+    - name: build
+      run: npm run make
 
-  # build_on_linux:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@v3
-  #   - uses: actions/setup-node@v3
-  #     with:
-  #       node-version: 16
-  #   - run: npm ci
-  #   - run: npm test
-    
-  #   - name: install dependencies
-  #     run: npm install
-  #   - name: build-react
-  #     run: npm run build
-  #   - name: mix
-  #     run: npm run mix
-  #   - name: build
-  #     run: npm run make
+  build_on_linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - run: npm ci
+    - run: npm test
+    - name: install dependencies
+      run: npm install
+    - name: build-react
+      run: npm run build
+    - name: mix
+      run: npm run mix
+    - name: build
+      run: npm run make
 
   build_on_win:
     runs-on: windows-latest
