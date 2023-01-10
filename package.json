@@ -33,9 +33,9 @@
     "electron-dev": "electron . dev",
     "electron": "electron .",
     "starte": "electron-forge start",
-    "package": "electron-forge package --platform=linux",
+    "package": "electron-forge package",
     "package-dmg": "electron-installer-dmg ./out/bird2-darwin-arm64/ bird2 --out=./out --overwrite",
-    "make": "electron-forge make --platform=linux",
+    "make": "electron-forge make",
     "publish": "electron-forge publish",
     "watch": "mix watch",
     "mix": "mix"

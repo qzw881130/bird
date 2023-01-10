@@ -2,7 +2,7 @@ module.exports = {
   packagerConfig: {
     icon: 'public/bird',
     ignore: ['node_modules', '.gitignore', 'src'],
-    platform: ['linux'],
+    platform: ['darwin'],
     overwrite: true,
     // arch: ['x64']
   },
@@ -11,7 +11,7 @@ module.exports = {
   publishers: [
     {
       name: '@electron-forge/publisher-github',
-      platforms: ["linux"],
+      platforms: ["darwin"],
       config: {
         repository: {
           owner: 'qzw881130',
@@ -36,7 +36,7 @@ module.exports = {
     // },
     {
       name: '@electron-forge/maker-zip',
-      platforms: ['linux'],
+      platforms: ['darwin'],
     },
     {
       name: '@electron-forge/maker-deb',
