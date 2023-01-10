@@ -5,6 +5,7 @@
   "productName": "bird2",
   "description": "My bird train saying tool",
   "main": "main.js",
+  "homepage": ".",
   "author": {
     "name": "zhiwei Qian",
     "email": "380659419@qq.com"

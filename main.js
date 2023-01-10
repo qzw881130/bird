@@ -16,9 +16,13 @@ function createWindow () {
     }
   })
 
+  console.log('mode:', mode);
+
   if(mode === 'dev') { 
     mainWindow.loadURL("http://localhost:3000/")
   } else { 
+    console.log('pathname:', path.join(__dirname, './build/index.html'));
+
     mainWindow.loadURL(url.format({
       pathname:path.join(__dirname, './build/index.html'), 
       protocol:'file:', 
