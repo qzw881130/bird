@@ -15,8 +15,8 @@ module.exports = {
         repository: {
           owner: 'qzw881130',
           name: 'birtd1',
-          draft: false
         },
+        draft: false,
         prerelease: true
       }
     }
