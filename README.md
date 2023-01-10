@@ -2,6 +2,9 @@
 
 ![main page](./WX20230110-204633.png)
 
+### Requirements
+node: v16.10+
+
 ### Installation
 ```shell
 cd bird;
