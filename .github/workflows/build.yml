@@ -48,7 +48,8 @@ jobs:
     - name: install dependencies
       run: npm install
     - name: build-react
-      run: CI=false npm run build
+      run: unset CI
+      run: npm run build
     - name: mix
       run: npm run mix
     - name: build
