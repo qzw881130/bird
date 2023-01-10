@@ -21,7 +21,7 @@ jobs:
     - name: install dependencies
       run: npm install
     - name: build-react
-      run: export CI=false && npm run build
+      run: npm run build
     - name: mix
       run: npm run mix
     - name: build
